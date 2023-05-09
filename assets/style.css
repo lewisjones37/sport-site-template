@@ -60,3 +60,8 @@
     cursor: pointer;
     
 }
+
+.navbar .link:hover{
+    background-color: rgb(var(--main-color)); 
+    color: rgb(var(--main-bg-color)); 
+}
