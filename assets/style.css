@@ -61,7 +61,8 @@
     
 }
 
-.navbar .link:hover{
+.navbar .link:hover, 
+.navbar .link.active {
     background-color: rgb(var(--main-color)); 
     color: rgb(var(--main-bg-color)); 
 }
