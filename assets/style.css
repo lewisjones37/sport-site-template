@@ -14,6 +14,7 @@
     --main-bg-color : 138, 21, 56;
     --main-color: 255, 255, 255;
     --border-color: 161, 16, 59;
+    --body-border-color: 214, 197,197;
 }
 
 /* header */
@@ -65,4 +66,85 @@
 .navbar .link.active {
     background-color: rgb(var(--main-color)); 
     color: rgb(var(--main-bg-color)); 
+}
+
+/* Results */
+
+/* tabs */
+
+.tabs {
+    
+    display: flex;
+    justify-content: center;
+
+}
+
+.tab {
+
+    width: 100%;
+    max-width: 1000px;
+}
+
+.matches {
+    margin: 0.5rem;
+}
+
+.matches .stage {
+    margin: 1rem 0;
+}
+
+.matches .container {
+    
+}
+
+.matches .container .match-container {
+    border: 1px solid rgb(var(--body-border-color));
+    border-radius: 5px;
+    max-width: 400px;
+    padding: 0.5rem;
+}
+
+.matches .container .match-container .match {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.match .teams {
+
+    width: 60%;
+}
+.match .team {
+    display: flex;
+    justify-content: space-around;
+    margin: 0.5rem 0;
+}
+
+
+.match .team .info {
+    display: flex;
+    
+}
+
+.match .team .info img {
+    width: 24px;
+    height: 24px;
+    border: 1px solid rgb(var(--body-border-color));
+    border-radius: 5px;
+    margin-right: 0.5rem;
+}
+
+.match .match-state {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-left: 1px solid rgb(var(--body-border-color));
+}
+
+/* hide */
+.hide {
+    display: none;
 }
